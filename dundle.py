@@ -4,8 +4,8 @@ import sys
 from lexer import tokens
 from lexer import analizador
 
-
-
+tabSym =[] #Tabla de simbolos
+aux = 0
 def p_DUNDLE(p):
     'DUNDLE : FUNCTIONS MEIN'
 def p_MEIN(p):
@@ -40,7 +40,16 @@ def p_DECLARACION(p):
                | LET ID IGUAL READ LPAREN RPAREN
                | LET ID IGUAL EXPRESION
                | LET ID  DIMENSION
+               | ID IGUAL EXPRESION
     '''
+    if p[1] == 'let' and p[3] != 'read':
+        aux = p[2]
+        tabSym.append(aux)
+    #elif p[1] == '=':
+    #    aux = p[2]
+
+
+
 def p_LLAMAFUN(p):
     '''
     LLAMAFUN : ID LPAREN RPAREN
@@ -164,3 +173,4 @@ if __name__ == '__main__':
     with open('suma.txt','r',encoding='utf8') as programa: 
         mein = programa.read()
     parser.parse(mein)
+    print(tabSym)

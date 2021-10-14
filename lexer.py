@@ -28,7 +28,7 @@ tokens =[
     'PLUS','MINUS','DIVIDE','MULT','MENOR','MAYOR','IGUAL','EQUAL',
     'MENORIGUAL','MAYORIGUAL','CONSTANTE','ID','LPAREN',
     'RPAREN','NOTEQUAL','LCOR','RCOR',
-    'AND','OR','STRING','RKEY','LKEY','PUNTO','COMI'
+    'AND','OR','STRING','RKEY','LKEY','PUNTO'
 ]+list(reserved.values())
 
 #DEFINICON DE LOS TOKENS
@@ -50,7 +50,7 @@ t_ignore  = ' \t'
 t_LKEY =r'\{'
 t_RKEY =r'\}'
 t_PUNTO =r'\.'
-t_COMI =r'\"'
+
 
 
 
