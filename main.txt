@@ -1,0 +1,32 @@
+main () {
+let a [2][2]
+let b [2][2]
+let i
+a[0][0]=1
+a[0][1]=2
+a[1][0]=3
+a[1][1]=4
+
+b[0][0]=5
+b[0][1]=6
+b[1][0]=7
+b[1][1]=8
+
+if (a.rows == b.rows && a.columns == b.columns){
+let c[2][2]
+for( i in c.rows){
+	for( j in c.columns){
+		c[i][j] = a[i][j] + b[i][j]
+			}
+}
+for( i in c.rows){ 
+	for( j in c.columns){
+		print(i)
+		            }	
+	print(" \n ")
+	     }
+}
+else{
+print("No se pueden sumar las matrices")
+}
+}

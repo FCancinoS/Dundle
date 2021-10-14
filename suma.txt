@@ -1,0 +1,6 @@
+main (){
+
+    if(5<10){
+        print("5 es mayor a 10")
+    }
+}
