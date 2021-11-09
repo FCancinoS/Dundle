@@ -1,4 +1,11 @@
 main(){
 
     print("Hola Mundo")
+
+    let float a1 = 5
+    let int b3 = 6
+    let float c = 0.3
+    let int a = 6 + c 
+    let int d123 = read()
+    let float b3 = 9
 }

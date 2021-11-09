@@ -21,14 +21,16 @@ reserved ={
     'in': 'IN',
     'fun': 'FUN',
     'rows':'ROWS',
-    'columns':'COLUMNS'
+    'columns':'COLUMNS',
+    'int':'INT',
+    'float':'FLOAT'
 }
 
 tokens =[
     'PLUS','MINUS','DIVIDE','MULT','MENOR','MAYOR','IGUAL','EQUAL',
     'MENORIGUAL','MAYORIGUAL','CONSTANTE','ID','LPAREN',
     'RPAREN','NOTEQUAL','LCOR','RCOR',
-    'AND','OR','STRING','RKEY','LKEY','PUNTO'
+    'AND','OR','STRING','RKEY','LKEY','PUNTO','CONDOUBLE'
 ]+list(reserved.values())
 
 #DEFINICON DE LOS TOKENS
